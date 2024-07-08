@@ -15,7 +15,7 @@ function about() {
         </figure>
         <div className="card-body p-4">
          
-          <p className="text-gray-700 md:text-center">Something yada yada yada.</p>
+          <p className="text-white-700 md:text-center">Something yada yada yada.</p>
           <div className="card-actions justify-end mt-4">
             <button className="btn btn-primary">Click Me</button>
           </div>
