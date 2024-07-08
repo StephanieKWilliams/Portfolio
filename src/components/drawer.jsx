@@ -1,5 +1,5 @@
 import React from 'react'
-
+import { Link } from 'react-router-dom';
 
 const drawer = ({ isOpen, onClose }) =>  {
   return (
@@ -18,10 +18,10 @@ const drawer = ({ isOpen, onClose }) =>  {
         <label htmlFor="my-drawer" aria-label="close sidebar" className="drawer-overlay"></label>
         <ul className="menu bg-base-200 text-base-content min-h-full w-80 p-4">
           {/* Sidebar content here */}
-              <li><a href=''>Home</a></li>
-              <li><a href=''>Services</a></li>
-              <li><a href=''>About Me</a></li>
-              <li><a href=''>Contact Me</a></li>
+               <li><Link to="/">Home</Link></li>
+               <li><Link to="/">Services</Link></li>
+               <li><Link to="/about">About Me</Link></li>
+               <li><Link to="/">Contact Me</Link></li>
         </ul>
       </div>
     </div>

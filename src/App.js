@@ -1,4 +1,5 @@
 import React, {useState , useEffect} from "react";
+import { BrowserRouter as Router, Routes , Route } from 'react-router-dom';
 import Navbar from "./components/Navbar.jsx"
 import Carousel from "./components/carousel.jsx"
 import About from "./components/about.jsx";
@@ -22,15 +23,16 @@ function App() {
     return <Loading />;
   }
   return (
-    <div className="App">
+    
+  
+    <Router>
       <Navbar/>
-      <Hero/>
-       <About/>
-      {/*<Experience/>
-      <Carousel/>       */}
-      <Footer/>
-      
-    </div>
+      <Routes>
+        <Route path="/" element={<Hero />} />
+        <Route path="/about" element={<About />} />
+        <Route path="/footer" element={<Footer />} />
+      </Routes>
+    </Router>
   );
 }
 
