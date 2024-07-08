@@ -25,8 +25,8 @@ function App() {
     <div className="App">
       <Navbar/>
       <Hero/>
-      {/* <About/>
-      <Experience/>
+       <About/>
+      {/*<Experience/>
       <Carousel/>       */}
       <Footer/>
       

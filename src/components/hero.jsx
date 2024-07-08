@@ -5,7 +5,7 @@ function hero() {
   return (
     <div>
       <div
-  className="hero min-h-screen bg-cover bg-center"
+  className="hero min-h-screen rounded-lg overflow-hidden bg-cover bg-center"
   style={{
     backgroundImage: "url(https://res.cloudinary.com/dsnzpqfvd/image/upload/v1720428105/WhatsApp_Image_2024-07-08_at_11.32.25_yjpivb.jpg)",
   }}>
