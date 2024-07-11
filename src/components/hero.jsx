@@ -25,8 +25,7 @@ function hero() {
             </div>
           </div>
        </section> 
-       <About/>
-       <Footer/>
+      
     </div>
   )
 }

@@ -22,6 +22,7 @@ const drawer = ({ isOpen, onClose }) =>  {
                <li><Link to="/">Services</Link></li>
                <li><Link to="/about">About Me</Link></li>
                <li><Link to="/">Contact Me</Link></li>
+               <li><Link to="/experience">Experience</Link></li>
         </ul>
       </div>
     </div>
