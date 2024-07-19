@@ -1,9 +1,9 @@
 import React, {useState , useEffect} from "react";
+
 import { BrowserRouter as Router, Routes , Route } from 'react-router-dom';
 import Navbar from "./components/Navbar.jsx"
 import Carousel from "./components/carousel.jsx"
 import About from "./components/about.jsx";
-import Experience from "./components/Experience.jsx"
 import Footer from "./components/footer.jsx"
 import Hero from "./components/hero.jsx"
 import Loading from "./components/loader.jsx";
@@ -22,6 +22,8 @@ function App() {
   if (loading) {
     return <Loading />;
   }
+  const Experience = React.lazy(() => import("./components/Experience.jsx"));
+
   return (
     
   
@@ -31,7 +33,14 @@ function App() {
         <Route path="/" element={<Hero />} />
         <Route path="/about" element={<About />} />
         <Route path="/footer" element={<Footer />} />
-        <Route path="/experience" element={<Experience />} />
+        <Route
+        path="/Experience"
+        element={
+          <React.Suspense fallback={<>...</>}>
+            <Experience />
+          </React.Suspense>
+        }
+      />
       </Routes>
     </Router>
   );
