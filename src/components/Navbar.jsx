@@ -37,10 +37,10 @@ function Navbar() {
             <ul className="menu menu-horizontal px-1">
           
             <li><Link to="/">Home</Link></li>
-               <li><Link to="/">Services</Link></li>
+               <li><Link to="/carousel">Services</Link></li>
                <li><Link to="/about">About Me</Link></li>
                <li><Link to="/">Contact Me</Link></li>
-               <li><Link to="/experience">Experience</Link></li>
+               <li><Link to="/experience">Gallery</Link></li>
             </ul>
           
           

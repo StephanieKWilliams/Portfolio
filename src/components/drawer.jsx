@@ -19,10 +19,10 @@ const drawer = ({ isOpen, onClose }) =>  {
         <ul className="menu bg-base-200 text-base-content min-h-full w-80 p-4">
           {/* Sidebar content here */}
                <li><Link to="/">Home</Link></li>
-               <li><Link to="/">Services</Link></li>
+               <li><Link to="/carousel">Services</Link></li>
                <li><Link to="/about">About Me</Link></li>
                <li><Link to="/">Contact Me</Link></li>
-               <li><Link to="/experience">Experience</Link></li>
+               <li><Link to="/experience">Gallery</Link></li>
         </ul>
       </div>
     </div>

@@ -1,26 +1,21 @@
-import React from 'react'
+import React from 'react';
 
-
-function cards() {
+// Define the Cards component to accept props
+function Cards({ imgSrc, altText, title, description, buttonText }) {
   return (
-    <div>
-      <div className="card bg-base-100 image-full w-96 shadow-xl">
-  <figure>
-    <img
-      src="https://img.daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.jpg"
-      alt="Shoes" />
-  </figure>
-  <div className="card-body">
-    <h2 className="card-title">Shoes!</h2>
-    <p>If a dog chews shoes whose shoes does he choose?</p>
-    <div className="card-actions justify-end">
-      <button className="btn btn-primary">Buy Now</button>
+    <div className="card bg-base-100 image-full w-96 shadow-xl p-4 m-2">
+      <figure>
+        <img src={imgSrc} alt={altText} />
+      </figure>
+      <div className="card-body">
+        <h2 className="card-title">{title}</h2>
+        <p>{description}</p>
+        <div className="card-actions justify-end">
+          <button className="btn btn-primary">{buttonText}</button>
+        </div>
+      </div>
     </div>
-  </div>
-</div>
-      
-    </div>
-  )
+  );
 }
 
-export default cards
+export default Cards;
