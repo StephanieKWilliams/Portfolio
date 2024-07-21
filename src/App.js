@@ -8,6 +8,7 @@ import Carousel from "./components/carousel.jsx"
 import Footer from "./components/footer.jsx"
 import Hero from "./components/hero.jsx"
 import Loading from "./components/loader.jsx";
+import Contact from "./components/contact.jsx";
 
 
 function App() {
@@ -27,11 +28,13 @@ function App() {
  
 
   return (
-    
+  
   
     <Router>
       <Navbar/>
       <Routes>
+      
+      <Route path="/Contact" element={<Contact />} />
         <Route path="/" element={<Hero />} />
         <Route path="/about" element={<About />} />
         <Route path="/carousel" element={<Carousel />} />
@@ -46,6 +49,7 @@ function App() {
       />
       </Routes>
     </Router>
+ 
   );
 }
 
