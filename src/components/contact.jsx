@@ -160,7 +160,7 @@ const Contact = () => {
           <div className="name w-full gap-5 text-white max-sm:flex-col flex">
             <Input
               pl={3}
-              fontSize={19}
+              fontSize={15}
               variant={"outline"}
               borderColor={"#002b561a"}
               focusBorderColor="#001d3b4d"
@@ -176,7 +176,7 @@ const Contact = () => {
             />
             <Input
               pl={3}
-              fontSize={19}
+              fontSize={15}
               variant={"outline"}
               borderColor={"#002b561a"}
               focusBorderColor="#001d3b4d"
@@ -192,7 +192,7 @@ const Contact = () => {
           </div>
           <Input
             pl={3}
-            fontSize={19}
+            fontSize={15}
             variant={"outline"}
             borderColor={"#002b561a"}
             focusBorderColor="#001d3b4d"
@@ -207,7 +207,7 @@ const Contact = () => {
           />
           <Input
             pl={3}
-            fontSize={19}
+            fontSize={15}
             variant={"outline"}
             borderColor={"#002b561a"}
             focusBorderColor="#001d3b4d"
@@ -224,7 +224,7 @@ const Contact = () => {
           />
           <Textarea
             pl={3}
-            fontSize={19}
+            fontSize={15}
             variant={"outline"}
             borderColor={"#002b561a"}
             focusBorderColor="#001d3b4d"
@@ -252,7 +252,7 @@ const Contact = () => {
             className="w-full"
             transitionDuration={"300ms"}
             fontWeight={"normal"}
-            fontSize={"20px"}
+            fontSize={"15px"}
             borderRadius={"4px"}
           >
             Submit
@@ -265,7 +265,7 @@ const Contact = () => {
           viewport={{ once: true, amount: 0.2 }}
           className="w-1/2 flex flex-col gap-5 max-lg:w-full"
         >
-          <div className="text-5xl max-md:text-4xl max-md:text-center">
+          <div className="text-3xl max-md:text-4xl max-md:text-center">
             <h1 className="font-semibold ">
               Contact our support{" "}
               <span className="font-semibold title-font  text-red-500">
@@ -277,19 +277,19 @@ const Contact = () => {
           something
           </p>
           <div className="flex flex-col gap-3">
-            <div className="flex  gap-3 text-xl items-center">
+            <div className="flex  gap-3 text-l items-center">
               <div>
                 <FaEnvelope className="text-red-500" />
               </div>
               <p>something</p>
             </div>
-            <div className="flex  gap-3 text-xl items-center">
+            <div className="flex  gap-3 text-l items-center">
               <div>
                 <FaPhone className="rotate-90 text-red-500" />
               </div>
               <p>something</p>
             </div>
-            <div className="flex  gap-3 text-xl items-center">
+            <div className="flex  gap-3 text-l items-center">
               <div>
                 <FaMapMarkerAlt className="text-red-500" />
               </div>
