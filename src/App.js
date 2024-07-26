@@ -9,6 +9,7 @@ import Footer from "./components/footer.jsx"
 import Hero from "./components/hero.jsx"
 import Loading from "./components/loader.jsx";
 import Contact from "./components/contact.jsx";
+import Error404 from "./components/Error404.jsx";
 
 
 function App() {
@@ -33,9 +34,9 @@ function App() {
     <Router>
       <Navbar/>
       <Routes>
-      
+      <Route path="*" element={<Error404 />} />
       <Route path="/Contact" element={<Contact />} />
-        <Route path="/" element={<Hero />} />
+        <Route path="/" element={<Error404 />} />
         <Route path="/about" element={<About />} />
         <Route path="/carousel" element={<Carousel />} />
         <Route path="/footer" element={<Footer />} />

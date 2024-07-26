@@ -234,7 +234,6 @@ const Contact = () => {
             _placeholder={{ color: "#696969" }}
             placeholder="Message"
             minHeight={"180px"}
-            className="w-ful text-white"
             name="message"
             value={formData.message}
             onChange={handleChange}
