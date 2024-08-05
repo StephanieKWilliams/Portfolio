@@ -36,7 +36,7 @@ function App() {
       <Routes>
       <Route path="*" element={<Error404 />} />
       <Route path="/Contact" element={<Contact />} />
-        <Route path="/" element={<Hero />} />
+        <Route path="/" element={< />} />
         <Route path="/about" element={<About />} />
         <Route path="/carousel" element={<Carousel />} />
         <Route path="/footer" element={<Footer />} />
