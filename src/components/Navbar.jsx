@@ -29,7 +29,8 @@ function Navbar() {
             </div>
             
           </div>
-          <a className="btn btn-ghost text-xl">Ajib Gathoni</a>
+          <a href="/" className="btn btn-ghost text-xl">Ajib Gathoni</a>
+
            </div>
         
           <div className="navbar-center hidden lg:flex">
