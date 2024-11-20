@@ -1,9 +1,9 @@
 import React from 'react';
 
 // Define the Cards component to accept props
-function Cards({ imgSrc, altText, title, description, buttonText }) {
+function cards({ imgSrc, altText, title, description, buttonText }) {
   return (
-    <div className="card bg-base-100 image-full w-96 shadow-xl p-4 m-2">
+    <div className="card  bg-base-100 image-full w-96  p-4 m-2">
       <figure>
         <img src={imgSrc} alt={altText} />
       </figure>
@@ -18,4 +18,4 @@ function Cards({ imgSrc, altText, title, description, buttonText }) {
   );
 }
 
-export default Cards;
+export default cards;
