@@ -1,5 +1,5 @@
 import React from 'react';
-import { FaFacebook, FaTwitter, FaInstagram } from 'react-icons/fa';
+import { FaFacebook, FaTwitter, FaInstagram ,  FaTiktok } from 'react-icons/fa';
 // Define the Cards component to accept props
 function cards({ imgSrc, altText, title, description, buttonText , socialLinks}) {
   return (
@@ -29,6 +29,11 @@ function cards({ imgSrc, altText, title, description, buttonText , socialLinks})
               {socialLinks.instagram && (
                 <a href={socialLinks.instagram} target="_blank" rel="noopener noreferrer">
                   <FaInstagram className="text-gray-700 hover:text-pink-600" size={24} />
+                </a>
+              )}
+               {socialLinks.tiktok && (
+                <a href={socialLinks.tiktok} target="_blank" rel="noopener noreferrer">
+                  <FaTiktok className="text-gray-700 hover:text-pink-600" size={24} />
                 </a>
               )}
             </>

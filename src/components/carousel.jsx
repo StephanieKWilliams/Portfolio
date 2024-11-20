@@ -17,7 +17,8 @@ function Carousel() {
             socialLinks={{
               facebook: 'https://facebook.com/yourprofile',
               twitter: 'https://twitter.com/yourprofile',
-              instagram: 'https://instagram.com/yourprofile'
+              instagram: 'https://instagram.com/yourprofile',
+              tiktok: 'https://instagram.com/yourprofile'
             }}
           />
         </div>
@@ -31,7 +32,8 @@ function Carousel() {
             socialLinks={{
               facebook: 'https://facebook.com/yourprofile',
               twitter: 'https://twitter.com/yourprofile',
-              instagram: 'https://instagram.com/yourprofile'
+              instagram: 'https://instagram.com/yourprofile',
+              tiktok: 'https://instagram.com/yourprofile'
             }}
           />
         </div>
@@ -45,7 +47,8 @@ function Carousel() {
             socialLinks={{
               facebook: 'https://facebook.com/yourprofile',
               twitter: 'https://twitter.com/yourprofile',
-              instagram: 'https://instagram.com/yourprofile'
+              instagram: 'https://instagram.com/yourprofile',
+              tiktok: 'https://instagram.com/yourprofile'
             }}
           />
         </div>
@@ -59,7 +62,8 @@ function Carousel() {
             socialLinks={{
               facebook: 'https://facebook.com/yourprofile',
               twitter: 'https://twitter.com/yourprofile',
-              instagram: 'https://instagram.com/yourprofile'
+              instagram: 'https://instagram.com/yourprofile',
+              tiktok: 'https://instagram.com/yourprofile'
             }}
           />
         </div>
@@ -73,7 +77,8 @@ function Carousel() {
             socialLinks={{
               facebook: 'https://facebook.com/yourprofile',
               twitter: 'https://twitter.com/yourprofile',
-              instagram: 'https://instagram.com/yourprofile'
+              instagram: 'https://instagram.com/yourprofile',
+              tiktok: 'https://instagram.com/yourprofile'
             }}
           />
         </div>
@@ -87,7 +92,8 @@ function Carousel() {
             socialLinks={{
               facebook: 'https://facebook.com/yourprofile',
               twitter: 'https://twitter.com/yourprofile',
-              instagram: 'https://instagram.com/yourprofile'
+              instagram: 'https://instagram.com/yourprofile',
+              tiktok: 'https://instagram.com/yourprofile'
             }}
           />
         </div>
