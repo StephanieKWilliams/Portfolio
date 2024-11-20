@@ -14,6 +14,11 @@ function Carousel() {
             title="Card Title 1" 
             description="This is the first card." 
             buttonText="Action 1" 
+            socialLinks={{
+              facebook: 'https://facebook.com/yourprofile',
+              twitter: 'https://twitter.com/yourprofile',
+              instagram: 'https://instagram.com/yourprofile'
+            }}
           />
         </div>
         <div className="carousel-item">
@@ -23,6 +28,11 @@ function Carousel() {
             title="Card Title 2" 
             description="This is the second card." 
             buttonText="Action 2" 
+            socialLinks={{
+              facebook: 'https://facebook.com/yourprofile',
+              twitter: 'https://twitter.com/yourprofile',
+              instagram: 'https://instagram.com/yourprofile'
+            }}
           />
         </div>
         <div className="carousel-item">
@@ -32,6 +42,11 @@ function Carousel() {
             title="Card Title 3" 
             description="This is the third card." 
             buttonText="Action 3" 
+            socialLinks={{
+              facebook: 'https://facebook.com/yourprofile',
+              twitter: 'https://twitter.com/yourprofile',
+              instagram: 'https://instagram.com/yourprofile'
+            }}
           />
         </div>
         <div className="carousel-item">
@@ -41,6 +56,11 @@ function Carousel() {
             title="Card Title 4" 
             description="This is the fourth card." 
             buttonText="Action 4" 
+            socialLinks={{
+              facebook: 'https://facebook.com/yourprofile',
+              twitter: 'https://twitter.com/yourprofile',
+              instagram: 'https://instagram.com/yourprofile'
+            }}
           />
         </div>
         <div className="carousel-item">
@@ -50,6 +70,11 @@ function Carousel() {
             title="Card Title 5" 
             description="This is the fifth card." 
             buttonText="Action 5" 
+            socialLinks={{
+              facebook: 'https://facebook.com/yourprofile',
+              twitter: 'https://twitter.com/yourprofile',
+              instagram: 'https://instagram.com/yourprofile'
+            }}
           />
         </div>
         <div className="carousel-item">
@@ -59,6 +84,11 @@ function Carousel() {
             title="Card Title 6" 
             description="This is the sixth card." 
             buttonText="Action 6" 
+            socialLinks={{
+              facebook: 'https://facebook.com/yourprofile',
+              twitter: 'https://twitter.com/yourprofile',
+              instagram: 'https://instagram.com/yourprofile'
+            }}
           />
         </div>
       </div>
