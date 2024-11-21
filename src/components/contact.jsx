@@ -1,49 +1,38 @@
 import React, { useState } from "react";
-import {
-  FaEnvelope,
-  FaPhone,
-  FaMapMarkerAlt,
-  FaCheckCircle,
-} from "react-icons/fa";
+import { FaEnvelope, FaPhone, FaMapMarkerAlt } from "react-icons/fa";
 import { motion } from "framer-motion";
 import { animationVariants } from "./animationVariants";
-import { Button, Input, Textarea, useToast, useColorMode } from "@chakra-ui/react";
+import { Button, Input, Textarea, useColorMode } from "@chakra-ui/react";
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 import axios from "axios";
 
 const Contact = () => {
+  const emailUrl = process.env.REACT_APP_EMAIL_SECRET;
   const { colorMode } = useColorMode(); // For light/dark mode
-  const toast = useToast();
   const [btnLoader, setBtnLoader] = useState(false);
 
   // Success Toast
   const showToast = () => {
-    toast({
-      title: "Thank you! Your message has been successfully sent.",
-      description: "We will get back to you shortly.",
-      status: "success", // Green color for success
-      duration: 4000,
-      isClosable: true,
-      position: "top",
-      containerStyle: { zIndex: 9999 },
-      // Optional customization of background color and border
-      bg: "green.400", // Green background for success
-      color: "white",  // White text color
-      borderRadius: "10px", // Rounded corners for a smoother look
-      fontWeight: "bold", // Make the message bold
-      // Add an icon for extra visual feedback (optional)
-      icon: <FaCheckCircle style={{ color: "white" }} />,
+    toast.success("Thank you! Your message has been successfully sent.", {
+      position: "top-center",
+      autoClose: 5000,
+      hideProgressBar: false,
+      closeOnClick: true,
+      pauseOnHover: true,
+      draggable: true,
+   
     });
   };
 
   // Error Toast
   const errorToast = (message) => {
-    toast({
-      title: message,
-      status: "error",
+    toast.error(message, {
+      position: "top-center",
       duration: 2000,
       isClosable: true,
-      position: "top",
       containerStyle: { zIndex: 9999 },
+     
     });
   };
 
@@ -69,9 +58,11 @@ const Contact = () => {
     // If validation passes, submit the form
     if (!errors) {
       setBtnLoader(true);
+
       axios
-        .post("https://formsubmit.co/your-email@example.com", formData)
+        .post(emailUrl, formData)
         .then((response) => {
+          console.log("Message sent successfully");
           showToast();
           setFormData({
             firstName: "",
@@ -80,12 +71,15 @@ const Contact = () => {
             email: "",
             message: "",
           });
-          setBtnLoader(false);
+          // setBtnLoader(false);
         })
         .catch((error) => {
           setBtnLoader(false);
           errorToast(error?.response?.data?.message || "An error occurred");
-        });
+        })
+        .finally(() => {
+        setBtnLoader(false); // Reset button loader after the request completes
+      });;
     }
   };
 
@@ -260,6 +254,9 @@ const Contact = () => {
           </Button>
         </motion.div>
       </div>
+
+      {/* Toast Container */}
+      <ToastContainer />
     </div>
   );
 };
