@@ -15,10 +15,9 @@ function Carousel() {
             description="This is the first card." 
             buttonText="Action 1" 
             socialLinks={{
-              facebook: 'https://facebook.com/yourprofile',
-              twitter: 'https://twitter.com/yourprofile',
-              instagram: 'https://instagram.com/yourprofile',
-              tiktok: 'https://instagram.com/yourprofile'
+              facebook: 'https://www.facebook.com/ajibgathonitiktok/',
+              instagram: 'https://www.instagram.com/ajib_gathoni/?hl=en',
+              tiktok: 'https://www.tiktok.com/@ajibgathoni?lang=en'
             }}
           />
         </div>
@@ -30,10 +29,9 @@ function Carousel() {
             description="This is the second card." 
             buttonText="Action 2" 
             socialLinks={{
-              facebook: 'https://facebook.com/yourprofile',
-              twitter: 'https://twitter.com/yourprofile',
-              instagram: 'https://instagram.com/yourprofile',
-              tiktok: 'https://instagram.com/yourprofile'
+              facebook: 'https://www.facebook.com/ajibgathonitiktok/',
+              instagram: 'https://www.instagram.com/ajib_gathoni/?hl=en',
+              tiktok: 'https://www.tiktok.com/@ajibgathoni?lang=en'
             }}
           />
         </div>
@@ -45,10 +43,9 @@ function Carousel() {
             description="This is the third card." 
             buttonText="Action 3" 
             socialLinks={{
-              facebook: 'https://facebook.com/yourprofile',
-              twitter: 'https://twitter.com/yourprofile',
-              instagram: 'https://instagram.com/yourprofile',
-              tiktok: 'https://instagram.com/yourprofile'
+              facebook: 'https://www.facebook.com/ajibgathonitiktok/',
+              instagram: 'https://www.instagram.com/ajib_gathoni/?hl=en',
+              tiktok: 'https://www.tiktok.com/@ajibgathoni?lang=en'
             }}
           />
         </div>
@@ -60,10 +57,9 @@ function Carousel() {
             description="This is the fourth card." 
             buttonText="Action 4" 
             socialLinks={{
-              facebook: 'https://facebook.com/yourprofile',
-              twitter: 'https://twitter.com/yourprofile',
-              instagram: 'https://instagram.com/yourprofile',
-              tiktok: 'https://instagram.com/yourprofile'
+              facebook: 'https://www.facebook.com/ajibgathonitiktok/',
+              instagram: 'https://www.instagram.com/ajib_gathoni/?hl=en',
+              tiktok: 'https://www.tiktok.com/@ajibgathoni?lang=en'
             }}
           />
         </div>
@@ -75,10 +71,9 @@ function Carousel() {
             description="This is the fifth card." 
             buttonText="Action 5" 
             socialLinks={{
-              facebook: 'https://facebook.com/yourprofile',
-              twitter: 'https://twitter.com/yourprofile',
-              instagram: 'https://instagram.com/yourprofile',
-              tiktok: 'https://instagram.com/yourprofile'
+              facebook: 'https://www.facebook.com/ajibgathonitiktok/',
+              instagram: 'https://www.instagram.com/ajib_gathoni/?hl=en',
+              tiktok: 'https://www.tiktok.com/@ajibgathoni?lang=en'
             }}
           />
         </div>
@@ -90,10 +85,9 @@ function Carousel() {
             description="This is the sixth card." 
             buttonText="Action 6" 
             socialLinks={{
-              facebook: 'https://facebook.com/yourprofile',
-              twitter: 'https://twitter.com/yourprofile',
-              instagram: 'https://instagram.com/yourprofile',
-              tiktok: 'https://instagram.com/yourprofile'
+              facebook: 'https://www.facebook.com/ajibgathonitiktok/',
+              instagram: 'https://www.instagram.com/ajib_gathoni/?hl=en',
+              tiktok: 'https://www.tiktok.com/@ajibgathoni?lang=en'
             }}
           />
         </div>

@@ -1,5 +1,5 @@
 import React from 'react';
-import { FaInstagram, FaTiktok, FaTwitter } from 'react-icons/fa'; // Import icons
+import { FaFacebook, FaInstagram, FaTiktok } from 'react-icons/fa'; // Import icons
 import { Link } from 'react-router-dom'; // For navigation
 
 function Hero() {
@@ -35,7 +35,7 @@ function Hero() {
       <div className="hidden lg:flex fixed bottom-8 left-1/2 transform -translate-x-1/2 space-x-6 z-50">
         {/* Instagram Link */}
         <a
-          href="https://www.instagram.com"
+          href= 'https://www.instagram.com/ajib_gathoni/?hl=en'
           target="_blank"
           rel="noopener noreferrer"
           className="text-4xl text-gray-700 hover:text-pink-500 transition duration-300"
@@ -45,7 +45,7 @@ function Hero() {
 
         {/* TikTok Link */}
         <a
-          href="https://www.tiktok.com"
+          href='https://www.tiktok.com/@ajibgathoni?lang=en'
           target="_blank"
           rel="noopener noreferrer"
           className="text-4xl text-gray-700 hover:text-black transition duration-300"
@@ -55,16 +55,17 @@ function Hero() {
 
         {/* X (Twitter) Link */}
         <a
-          href="https://x.com"
+          href='https://www.facebook.com/ajibgathonitiktok/'
           target="_blank"
           rel="noopener noreferrer"
           className="text-4xl text-gray-700 hover:text-blue-500 transition duration-300"
         >
-          <FaTwitter />
+          <FaFacebook />
         </a>
       </div>
     </div>
   );
 }
+
 
 export default Hero;
