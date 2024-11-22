@@ -1,18 +1,29 @@
 import React from 'react';
 import Cards from './cards.jsx';
-
+import { motion } from "framer-motion";
+import { animationVariants } from "./animationVariants";
 function Carousel() {
   return (
     <div className="flex justify-center items-center py-4">
       {/* Grid container */}
+      <motion.div
+          initial="initial"
+          whileInView="animate"
+          variants={animationVariants.zoomOut}
+          viewport={{ once: true, amount: 0.2 }}
+          id="contact"
+          style={{ boxShadow: "0 20px 50px rgba(0, 43, 86, .1)" }}
+          // className="w-full lg:w-1/2 p-6 py-7 rounded-md flex flex-col gap-5"
+        >
       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 w-full max-w-screen-xl px-4">
         {/* Carousel items */}
+       
         <div className="carousel-item">
           <Cards 
-            imgSrc="https://res.cloudinary.com/dsnzpqfvd/image/upload/v1720015108/WhatsApp_Image_2024-07-03_at_15.45.07_dqmzy3.jpg" 
+            imgSrc="https://res.cloudinary.com/dsnzpqfvd/image/upload/v1720428105/WhatsApp_Image_2024-07-08_at_11.32.25_yjpivb.jpg" 
             altText="Image 1 Description" 
             title="Card Title 1" 
-            description="This is the first card." 
+            description="This is the second card." 
             buttonText="Action 1" 
             socialLinks={{
               facebook: 'https://www.facebook.com/ajibgathonitiktok/',
@@ -91,7 +102,9 @@ function Carousel() {
             }}
           />
         </div>
+       
       </div>
+      </motion.div>
     </div>
   );
 }

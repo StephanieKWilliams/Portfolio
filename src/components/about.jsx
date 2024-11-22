@@ -1,10 +1,18 @@
 import React from 'react'
 import { Link } from 'react-router-dom'; 
-
+import { motion } from "framer-motion";
+import { animationVariants } from "./animationVariants";
 function about() {
   return (
   <div>
     <section id='about'>
+    <motion.div
+          initial="initial"
+          whileInView="animate"
+          variants={animationVariants.fadeRight}
+          viewport={{ once: true, amount: 0.2 }}
+         
+        >
     <h1 className="card-title text-center font-bold flex justify-center mt-8 text-4xl mb-4 md:text-center">Get to know Me 😉</h1>
      <div className="card lg:card-side bg-base-100 shadow-xl p-4 m-2">
         <figure className="rounded-lg overflow-hidden">
@@ -26,7 +34,7 @@ function about() {
           </div>
      </div>
       </div>
-
+    </motion.div>
       </section> 
     </div>
   )
