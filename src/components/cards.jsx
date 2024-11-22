@@ -1,5 +1,8 @@
 import React from 'react';
 import { FaFacebook, FaTwitter, FaInstagram ,  FaTiktok } from 'react-icons/fa';
+import { Link } from 'react-router-dom'; 
+
+
 // Define the Cards component to accept props
 function cards({ imgSrc, altText, title, description, buttonText , socialLinks}) {
   return (
@@ -11,7 +14,13 @@ function cards({ imgSrc, altText, title, description, buttonText , socialLinks})
         <h2 className="card-title">{title}</h2>
         <p>{description}</p>
         <div className="card-actions justify-end">
-          <button className="btn btn-primary">{buttonText}</button>
+           <Link
+                to="/contact" // Assuming /contact is the contact page route
+                className="btn btn-secondary btn-outline"
+              >
+              {buttonText}
+              </Link>
+          
         </div>
         <div className="flex justify-evenly mt-4">
           {socialLinks && (

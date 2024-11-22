@@ -1,5 +1,5 @@
 import React from 'react'
-
+import { Link } from 'react-router-dom'; 
 
 function about() {
   return (
@@ -17,7 +17,12 @@ function about() {
          
           <p className="text-white-700 md:text-center">Something yada yada yada.</p>
           <div className="card-actions justify-end mt-4">
-            <button className="btn btn-primary">Click Me</button>
+          <Link
+                to="/contact" // Assuming /contact is the contact page route
+                className="btn btn-secondary btn-outline"
+              >
+              Contact Me
+              </Link>
           </div>
      </div>
       </div>

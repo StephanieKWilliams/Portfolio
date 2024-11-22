@@ -1,6 +1,5 @@
 import React from 'react';
 import { FaFacebook, FaInstagram, FaTiktok } from 'react-icons/fa'; // Import icons
-import { Link } from 'react-router-dom'; // For navigation
 
 function Hero() {
   return (
@@ -14,12 +13,12 @@ function Hero() {
           }}
         >
           <div className="hero-overlay bg-opacity-60"></div>
-          <div className="hero-content text-neutral-content text-center">
-            <div className="max-w-md mx-auto px-4">
-              <h1 className="mb-5 text-5xl font-bold">Grow your Page</h1>
-              <p className="mb-5">Let's Gooo!!</p>
+          {/* <div className="hero-content text-neutral-content text-botto">
+            <div className="min-w-md mx-auto px-4">
+              <h3 className="mb-2 text-1xl font-bold">Grow your Page</h3>
+              <p className="mb-2">Let's Gooo!!</p>
 
-              {/* "Click Me" Button (Navigates to the Contact Page) */}
+            
               <Link
                 to="/contact" // Assuming /contact is the contact page route
                 className="btn btn-primary"
@@ -27,7 +26,7 @@ function Hero() {
                 Go to Contact Page
               </Link>
             </div>
-          </div>
+          </div> */}
         </div>
       </section>
 

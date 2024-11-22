@@ -47,7 +47,12 @@ function Navbar() {
           
           </div>
           <div className="navbar-end">
-            <a className="btn">Book Me</a>
+          <Link
+                to="/contact" // Assuming /contact is the contact page route
+                className="btn btn-secondary btn-outline"
+              >
+              Contact Me
+              </Link>
           </div>
           <Drawer isOpen={isDrawerOpen} onClose={() => setIsDrawerOpen(false)} />
         </div>
