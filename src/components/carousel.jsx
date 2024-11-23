@@ -10,10 +10,9 @@ function Carousel() {
           initial="initial"
           whileInView="animate"
           variants={animationVariants.zoomOut}
-          viewport={{ once: true, amount: 0.2 }}
-          id="contact"
+          viewport={{ once: true, amount: 0.1 }}
           style={{ boxShadow: "0 20px 50px rgba(0, 43, 86, .1)" }}
-          // className="w-full lg:w-1/2 p-6 py-7 rounded-md flex flex-col gap-5"
+          className="flex justify-center items-center py-4"
         >
       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 w-full max-w-screen-xl px-4">
         {/* Carousel items */}
